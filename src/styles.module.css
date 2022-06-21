@@ -1,0 +1,64 @@
+.grid-container {
+    display: grid; 
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 80%;
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "shapes contour"
+      "shapes gifs"; 
+}
+
+.animal-shape-wrapper {
+    cursor: grab;
+    padding: 20px;
+    text-align: center;
+}
+
+.shapes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: shapes;
+}
+
+.contour {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    width: 100%;
+    grid-area: contour;
+}
+
+.gifs {
+    grid-area: gifs;
+    padding-top: 150px;
+}
+
+.gifs-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.no-gifs-text {
+    color: #ff9668;
+    font-size: 5rem;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #edff8f;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
